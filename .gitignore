@@ -1,0 +1,29 @@
+# Ignore virtual environments
+task/
+venv/
+.env
+.task
+
+# Ignore compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore FAISS index and embeddings
+*.faiss
+*.pkl
+*.bin
+*.npy
+
+# Ignore dataset files
+data/
+*.csv
+*.json
+*.xlsx
+*.tsv
+*.parquet
+
+# Ignore logs and cache
+logs/
+*.log

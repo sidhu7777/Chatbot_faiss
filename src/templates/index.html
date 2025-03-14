@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatbot</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      h1 {
+        color: #333;
+      }
+      form {
+        margin-bottom: 20px;
+      }
+      input[type="text"] {
+        width: 300px;
+        padding: 10px;
+        font-size: 16px;
+      }
+      input[type="submit"] {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #0056b3;
+      }
+      .results {
+        margin-top: 20px;
+      }
+      .result {
+        background-color: #f9f9f9;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-left: 5px solid #007bff;
+      }
+      .error {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Chatbot</h1>
+    <form action="/" method="POST">
+      <label for="query">Enter your query:</label><br />
+      <input
+        type="text"
+        id="query"
+        name="query"
+        placeholder="e.g., Find Python courses"
+        required
+      />
+      <input type="submit" value="Submit" />
+    </form>
+
+    {% if error %}
+    <p class="error">{{ error }}</p>
+    {% endif %} {% if query %}
+    <h2>Results for "{{ query }}":</h2>
+    <div class="results">
+      {% if results %} {% for result in results %}
+      <div class="result">
+        <p>{{ result.content }}</p>
+      </div>
+      {% endfor %} {% else %}
+      <p>No results found.</p>
+      {% endif %}
+    </div>
+    {% endif %}
+  </body>
+</html>
