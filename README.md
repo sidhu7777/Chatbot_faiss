@@ -60,13 +60,6 @@ Here are some example queries you can try with the chatbot:
 
 General Course Queries
 
-User: What courses are available?
-Bot: Here are the available courses grouped by category:
-- AI: AI Pro Camp, Time Mastery Camp, AI Camp for Jobs & Business...
-- Python: Python Programming - Beginner, Python Programming - Intermediate...
-- Web Development: Learn JavaScript, Learn Node.js, Web Development Pro...
-
-
 User: List AI courses
 Bot: Found 4 course(s) in 'AI':
 - Time Mastery Camp (AI)
@@ -86,4 +79,19 @@ Bot: We offer courses in the following categories:
 - Other Programming
 - Java
 - Web Development
+
+
+User: What is AI Pro Camp?
+Bot: Course: AI Pro Camp
+Description: Career Growth Catalyst. Our Intro to AI for Adults course is designed to equip professionals with essential knowledge and practical skills.
+
+User: What is the price of AI Pro Camp?
+Bot: Course: AI Pro Camp
+Price per session: $30
+Total price: $300
+
+User: How many lessons are in AI Pro Camp?
+Bot: Course: AI Pro Camp
+Number of lessons: 10
+
 ````
