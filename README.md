@@ -38,6 +38,7 @@ Chatbot_faiss/
 ├── requirements.txt               # Dependencies list
 ├── README.md                      # Project documentation
 
+````bash
 
 ##  Technologies Used
 
