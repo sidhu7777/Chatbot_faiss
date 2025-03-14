@@ -15,7 +15,7 @@ This project is a **Fast and Efficient AI-Powered Chatbot** designed to retrieve
 
 ## Project Structure
 
-````bash
+````
 Chatbot_faiss/
 ├── src/
 │   ├── Scrapper.py              # Web scraping for course data (LangChain WebBaseLoader)
@@ -38,10 +38,11 @@ Chatbot_faiss/
 ├── requirements.txt               # Dependencies list
 ├── README.md                      # Project documentation
 
-````bash
+````
 
 ##  Technologies Used
 
+````
 | Category                | Tools & Libraries          |
 |-------------------------|---------------------------|
 | **Programming Language** | Python                 |
@@ -52,13 +53,13 @@ Chatbot_faiss/
 | **Machine Learning**    | Sentence-Transformers     |
 | **Testing**            | PyTest                    |
 
-
+````
 ##  Sample Queries
-
+````
 Here are some example queries you can try with the chatbot:
 
-### **1 General Course Queries**
-```bash
+General Course Queries
+
 User: What courses are available?
 Bot: Here are the available courses grouped by category:
 - AI: AI Pro Camp, Time Mastery Camp, AI Camp for Jobs & Business...
